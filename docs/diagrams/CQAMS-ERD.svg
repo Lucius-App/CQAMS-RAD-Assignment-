@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="1020" viewBox="0 0 1280 1020" role="img" aria-labelledby="title description">
+  <title id="title">CQAMS entity relationship diagram</title>
+  <desc id="description">Core CQAMS tables and their one-to-many and optional relationships.</desc>
+  <defs>
+    <style>
+      .title { font: 700 28px Arial, sans-serif; fill: #102a43; }
+      .subtitle { font: 14px Arial, sans-serif; fill: #526579; }
+      .entity { fill: #ffffff; stroke: #91a8bd; stroke-width: 2; rx: 12; }
+      .head { fill: #e8f1f8; }
+      .name { font: 700 16px Arial, sans-serif; fill: #102a43; }
+      .field { font: 12px Arial, sans-serif; fill: #334e68; }
+      .rel { fill: none; stroke: #4a789b; stroke-width: 2; }
+      .card { font: 12px Arial, sans-serif; fill: #334e68; paint-order: stroke; stroke: #ffffff; stroke-width: 4px; }
+    </style>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#4a789b"/>
+    </marker>
+  </defs>
+  <rect width="1280" height="900" fill="#f5f8fb"/>
+  <text x="40" y="46" class="title">CQAMS Database ERD</text>
+  <text x="40" y="70" class="subtitle">Arrows show parent-to-child; labels give cardinality. Account actor/audit links are omitted for clarity.</text>
+
+  <g class="rel">
+    <path d="M570 130 H790" marker-end="url(#arrow)"/>
+    <path d="M400 200 V260 H145 V300" marker-end="url(#arrow)"/>
+    <path d="M40 170 H20 V575 H470 V610" marker-end="url(#arrow)"/>
+    <path d="M250 180 H280 V280 H495 V300" marker-end="url(#arrow)"/>
+    <path d="M250 365 H390" marker-end="url(#arrow)"/>
+    <path d="M600 365 H690" marker-end="url(#arrow)"/>
+    <path d="M600 405 V470 H945 V365 H960" marker-end="url(#arrow)"/>
+    <path d="M250 190 H280 V250 H1240 V365 H1220" marker-end="url(#arrow)"/>
+    <path d="M900 200 V270 H1060 V300" marker-end="url(#arrow)"/>
+    <path d="M500 430 V610" marker-end="url(#arrow)"/>
+    <path d="M1180 430 V520 H470 V610" marker-end="url(#arrow)"/>
+    <path d="M1010 150 H1270 V580 H560 V610" marker-end="url(#arrow)"/>
+    <path d="M590 690 H700" marker-end="url(#arrow)"/>
+    <path d="M590 750 V770 H1230 V740 H1100" marker-end="url(#arrow)"/>
+    <path d="M600 410 H645 V570 H815 V610" marker-end="url(#arrow)"/>
+    <path d="M815 740 V790" marker-end="url(#arrow)"/>
+  </g>
+  <g class="card">
+    <text x="650" y="122">1 : 0..1</text>
+    <text x="260" y="255">1 : 0..1</text>
+    <text x="70" y="568">1 : 0..*</text>
+    <text x="290" y="270">1 : 0..*</text>
+    <text x="300" y="355">1 : 0..1</text>
+    <text x="620" y="355">1 : 0..*</text>
+    <text x="760" y="465">1 : 0..*</text>
+    <text x="700" y="242">1 : 0..*</text>
+    <text x="924" y="258">1 : 0..*</text>
+    <text x="440" y="535">1 : 0..*</text>
+    <text x="810" y="510">1 : 0..1</text>
+    <text x="1110" y="570">1 : 0..*</text>
+    <text x="620" y="680">1 : 0..1</text>
+    <text x="720" y="765">1 : 0..*</text>
+    <text x="660" y="560">1 : 0..*</text>
+    <text x="830" y="780">1 : 0..*</text>
+  </g>
+
+  <g transform="translate(40 100)">
+    <rect class="entity" width="210" height="100"/>
+    <path class="head" d="M12 0 H198 Q210 0 210 12 V34 H0 V12 Q0 0 12 0Z"/>
+    <text x="14" y="23" class="name">clinics</text>
+    <text x="14" y="56" class="field">PK clinic_id</text>
+    <text x="14" y="76" class="field">UQ clinic_code</text>
+  </g>
+  <g transform="translate(330 100)">
+    <rect class="entity" width="240" height="100"/>
+    <path class="head" d="M12 0 H228 Q240 0 240 12 V34 H0 V12 Q0 0 12 0Z"/>
+    <text x="14" y="23" class="name">user_accounts</text>
+    <text x="14" y="56" class="field">PK user_account_id</text>
+    <text x="14" y="76" class="field">UQ username</text>
+  </g>
+  <g transform="translate(790 100)">
+    <rect class="entity" width="220" height="100"/>
+    <path class="head" d="M12 0 H208 Q220 0 220 12 V34 H0 V12 Q0 0 12 0Z"/>
+    <text x="14" y="23" class="name">patients</text>
+    <text x="14" y="56" class="field">PK patient_id</text>
+    <text x="14" y="76" class="field">FK user_account_id (optional)</text>
+  </g>
+
+  <g transform="translate(40 300)">
+    <rect class="entity" width="210" height="130"/>
+    <path class="head" d="M12 0 H198 Q210 0 210 12 V34 H0 V12 Q0 0 12 0Z"/>
+    <text x="14" y="23" class="name">staff</text>
+    <text x="14" y="56" class="field">PK staff_id</text>
+    <text x="14" y="76" class="field">FK user_account_id</text>
+    <text x="14" y="96" class="field">FK clinic_id (optional)</text>
+    <text x="14" y="116" class="field">UQ employee_number</text>
+  </g>
+  <g transform="translate(390 300)">
+    <rect class="entity" width="210" height="130"/>
+    <path class="head" d="M12 0 H198 Q210 0 210 12 V34 H0 V12 Q0 0 12 0Z"/>
+    <text x="14" y="23" class="name">doctors</text>
+    <text x="14" y="56" class="field">PK doctor_id</text>
+    <text x="14" y="76" class="field">FK staff_id, clinic_id (optional)</text>
+    <text x="14" y="96" class="field">specialization</text>
+    <text x="14" y="116" class="field">UQ license_number</text>
+  </g>
+  <g transform="translate(690 300)">
+    <rect class="entity" width="240" height="130"/>
+    <path class="head" d="M12 0 H228 Q240 0 240 12 V34 H0 V12 Q0 0 12 0Z"/>
+    <text x="14" y="23" class="name">doctor_schedules</text>
+    <text x="14" y="56" class="field">PK doctor_schedule_id</text>
+    <text x="14" y="76" class="field">FK doctor_id</text>
+    <text x="14" y="96" class="field">day, start/end, duration</text>
+    <text x="14" y="116" class="field">is_active</text>
+  </g>
+  <g transform="translate(960 300)">
+    <rect class="entity" width="260" height="130"/>
+    <path class="head" d="M12 0 H248 Q260 0 260 12 V34 H0 V12 Q0 0 12 0Z"/>
+    <text x="14" y="23" class="name">appointments</text>
+    <text x="14" y="56" class="field">PK appointment_id</text>
+    <text x="14" y="76" class="field">FK patient_id, doctor_id</text>
+    <text x="14" y="96" class="field">FK clinic_id?, doctor_schedule_id?</text>
+    <text x="14" y="116" class="field">date/time, status, approval</text>
+  </g>
+
+  <g transform="translate(350 610)">
+    <rect class="entity" width="240" height="150"/>
+    <path class="head" d="M12 0 H228 Q240 0 240 12 V34 H0 V12 Q0 0 12 0Z"/>
+    <text x="14" y="23" class="name">queues</text>
+    <text x="14" y="56" class="field">PK queue_id</text>
+    <text x="14" y="76" class="field">FK patient_id, doctor_id</text>
+    <text x="14" y="96" class="field">FK appointment_id?, clinic_id?</text>
+    <text x="14" y="116" class="field">queue_date, number, status</text>
+    <text x="14" y="136" class="field">UQ clinic_code/date/number</text>
+  </g>
+  <g transform="translate(700 610)">
+    <rect class="entity" width="230" height="130"/>
+    <path class="head" d="M12 0 H218 Q230 0 230 12 V34 H0 V12 Q0 0 12 0Z"/>
+    <text x="14" y="23" class="name">consultations</text>
+    <text x="14" y="56" class="field">PK consultation_id</text>
+    <text x="14" y="76" class="field">UQ/FK queue_id</text>
+    <text x="14" y="96" class="field">FK doctor_id</text>
+    <text x="14" y="116" class="field">status, notes, outcome</text>
+  </g>
+  <g transform="translate(990 610)">
+    <rect class="entity" width="220" height="130"/>
+    <path class="head" d="M12 0 H208 Q220 0 220 12 V34 H0 V12 Q0 0 12 0Z"/>
+    <text x="14" y="23" class="name">queue_events</text>
+    <text x="14" y="56" class="field">PK queue_event_id</text>
+    <text x="14" y="76" class="field">FK queue_id</text>
+    <text x="14" y="96" class="field">previous/new status</text>
+    <text x="14" y="116" class="field">actor, event timestamp</text>
+  </g>
+  <g transform="translate(700 790)">
+    <rect class="entity" width="230" height="130"/>
+    <path class="head" d="M12 0 H218 Q230 0 230 12 V34 H0 V12 Q0 0 12 0Z"/>
+    <text x="14" y="23" class="name">prescriptions</text>
+    <text x="14" y="56" class="field">PK prescription_id</text>
+    <text x="14" y="76" class="field">FK consultation_id</text>
+    <text x="14" y="96" class="field">medicine, dosage</text>
+    <text x="14" y="116" class="field">frequency, duration</text>
+  </g>
+  <text x="40" y="960" class="subtitle">? = nullable foreign key. User-account actor/audit references are omitted; all core workflow relationships are shown.</text>
+  <text x="40" y="980" class="subtitle">PK = primary key; FK = foreign key; UQ = unique constraint. See database/cqams.sql for complete columns and constraints.</text>
+</svg>

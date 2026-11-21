@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="820" viewBox="0 0 1400 820" role="img" aria-labelledby="title description">
+  <title id="title">CQAMS interface wireframe</title>
+  <desc id="description">Conceptual patient dashboard and administrator appointment list layouts.</desc>
+  <defs>
+    <style>
+      .title { font: 700 26px Arial, sans-serif; fill: #102a43; }
+      .label { font: 700 16px Arial, sans-serif; fill: #243b53; }
+      .small { font: 13px Arial, sans-serif; fill: #526579; }
+      .screen { fill: #ffffff; stroke: #829ab1; stroke-width: 2; rx: 14; }
+      .bar { fill: #e8f1f8; }
+      .box { fill: #f7fafc; stroke: #bcccdc; stroke-width: 1.5; rx: 8; }
+      .button { fill: #d9eaf6; stroke: #6b94b5; stroke-width: 1.5; rx: 6; }
+      .line { stroke: #bcccdc; stroke-width: 1.5; }
+    </style>
+  </defs>
+  <rect width="1400" height="820" fill="#f5f8fb"/>
+  <text x="40" y="48" class="title">CQAMS Proposed Interface Wireframe</text>
+  <text x="40" y="74" class="small">Concept sketch only; use real system screenshots in the final submission.</text>
+
+  <g transform="translate(40 110)">
+    <rect class="screen" width="630" height="650"/>
+    <rect class="bar" width="630" height="62" rx="14"/>
+    <text x="24" y="38" class="label">CQAMS | Patient Portal</text>
+    <text x="475" y="38" class="small">Profile | Log out</text>
+    <rect class="box" x="20" y="82" width="150" height="545"/>
+    <text x="38" y="120" class="small">Dashboard</text>
+    <text x="38" y="160" class="small">Book appointment</text>
+    <text x="38" y="200" class="small">My appointments</text>
+    <text x="38" y="240" class="small">Medical history</text>
+    <text x="38" y="280" class="small">Clinic branches</text>
+    <text x="195" y="112" class="label">Welcome, patient</text>
+    <rect class="box" x="195" y="135" width="190" height="92"/>
+    <text x="212" y="168" class="small">Upcoming visits</text>
+    <text x="212" y="198" class="label">Appointment count</text>
+    <rect class="box" x="405" y="135" width="200" height="92"/>
+    <text x="422" y="168" class="small">Live queue</text>
+    <text x="422" y="198" class="label">Ticket / people ahead</text>
+    <rect class="box" x="195" y="248" width="410" height="170"/>
+    <text x="215" y="282" class="label">Appointment history</text>
+    <line x1="215" y1="300" x2="585" y2="300" class="line"/>
+    <text x="215" y="330" class="small">Date | Doctor | Branch | Status | Action</text>
+    <line x1="215" y1="346" x2="585" y2="346" class="line"/>
+    <text x="215" y="376" class="small">Upcoming appointment row</text>
+    <rect class="button" x="195" y="444" width="190" height="54"/>
+    <text x="220" y="477" class="small">Request appointment</text>
+    <rect class="box" x="195" y="520" width="410" height="85"/>
+    <text x="215" y="553" class="small">Queue display: ticket number, active count, last updated</text>
+    <text x="215" y="580" class="small">No other patient's name or private information</text>
+  </g>
+
+  <g transform="translate(730 110)">
+    <rect class="screen" width="630" height="650"/>
+    <rect class="bar" width="630" height="62" rx="14"/>
+    <text x="24" y="38" class="label">CQAMS | Administrator</text>
+    <text x="475" y="38" class="small">admin_demo | Log out</text>
+    <rect class="box" x="20" y="82" width="150" height="545"/>
+    <text x="38" y="120" class="small">Overview</text>
+    <text x="38" y="160" class="small">Approvals</text>
+    <text x="38" y="200" class="small">Clinics</text>
+    <text x="38" y="240" class="small">Patients</text>
+    <text x="38" y="280" class="small">Appointments</text>
+    <text x="38" y="320" class="small">Queue</text>
+    <text x="195" y="112" class="label">Appointments</text>
+    <rect class="button" x="478" y="87" width="128" height="42"/>
+    <text x="495" y="114" class="small">New record</text>
+    <rect class="box" x="195" y="145" width="410" height="82"/>
+    <text x="213" y="178" class="small">Search patient/doctor | Date filter | Status filter</text>
+    <text x="213" y="204" class="small">Apply filters</text>
+    <rect class="box" x="195" y="245" width="410" height="255"/>
+    <text x="213" y="278" class="small">Date | Patient | Doctor | Status | Actions</text>
+    <line x1="213" y1="294" x2="585" y2="294" class="line"/>
+    <text x="213" y="326" class="small">Appointment row | View | Reschedule | Cancel | Delete*</text>
+    <line x1="213" y1="342" x2="585" y2="342" class="line"/>
+    <text x="213" y="374" class="small">Appointment row | View | Reschedule | Cancel | Delete*</text>
+    <line x1="213" y1="390" x2="585" y2="390" class="line"/>
+    <text x="213" y="422" class="small">Appointment row | View | Reschedule | Cancel</text>
+    <text x="195" y="535" class="small">* Permanent delete only before queue history exists.</text>
+    <rect class="box" x="195" y="555" width="410" height="50"/>
+    <text x="213" y="586" class="small">Action feedback: success, validation, or conflict message</text>
+  </g>
+</svg>

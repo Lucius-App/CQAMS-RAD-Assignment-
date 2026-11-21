@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgSouth" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4c1d95" />
+      <stop offset="100%" stop-color="#581c87" />
+    </linearGradient>
+    <linearGradient id="bldgSouth" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#e9d5ff" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="360" fill="url(#bgSouth)" />
+  <!-- Abstract Specialist Centre Silhouette -->
+  <circle cx="120" cy="120" r="90" fill="#a855f7" opacity="0.15" />
+  <circle cx="500" cy="220" r="110" fill="#c084fc" opacity="0.12" />
+  <!-- Twin Towers -->
+  <rect x="170" y="100" width="110" height="220" rx="8" fill="url(#bldgSouth)" />
+  <rect x="320" y="120" width="110" height="200" rx="8" fill="url(#bldgSouth)" />
+  <!-- Skybridge -->
+  <rect x="270" y="160" width="60" height="30" rx="4" fill="#a855f7" opacity="0.9" />
+  <rect x="275" y="165" width="50" height="20" rx="2" fill="#e9d5ff" />
+  <!-- Medical Cross on Tower A -->
+  <rect x="213" y="120" width="24" height="8" rx="2" fill="#ec4899" />
+  <rect x="221" y="112" width="8" height="24" rx="2" fill="#ec4899" />
+  <!-- Windows -->
+  <g fill="#7c3aed" opacity="0.75">
+    <rect x="185" y="160" width="20" height="20" rx="3" fill="#c084fc"/>
+    <rect x="215" y="160" width="20" height="20" rx="3" fill="#c084fc"/>
+    <rect x="245" y="160" width="20" height="20" rx="3" fill="#c084fc"/>
+    <rect x="185" y="195" width="20" height="20" rx="3" fill="#c084fc"/>
+    <rect x="215" y="195" width="20" height="20" rx="3" fill="#c084fc"/>
+    <rect x="245" y="195" width="20" height="20" rx="3" fill="#c084fc"/>
+    <rect x="335" y="160" width="20" height="20" rx="3" fill="#c084fc"/>
+    <rect x="365" y="160" width="20" height="20" rx="3" fill="#c084fc"/>
+    <rect x="395" y="160" width="20" height="20" rx="3" fill="#c084fc"/>
+    <rect x="335" y="195" width="20" height="20" rx="3" fill="#c084fc"/>
+    <rect x="365" y="195" width="20" height="20" rx="3" fill="#c084fc"/>
+    <rect x="395" y="195" width="20" height="20" rx="3" fill="#c084fc"/>
+  </g>
+  <!-- Entrance -->
+  <rect x="260" y="250" width="80" height="70" rx="6" fill="#1e1b4b" />
+  <rect x="265" y="255" width="33" height="65" fill="#f472b6" opacity="0.8" />
+  <rect x="302" y="255" width="33" height="65" fill="#f472b6" opacity="0.8" />
+  <!-- Ground -->
+  <rect x="0" y="320" width="600" height="40" fill="#2e1065" />
+  <rect x="0" y="320" width="600" height="4" fill="#a855f7" />
+  <!-- Badge Label -->
+  <rect x="20" y="20" width="180" height="32" rx="16" fill="#3b0764" />
+  <text x="110" y="41" fill="#f3e8ff" font-family="system-ui, sans-serif" font-size="13" font-weight="600" text-anchor="middle">South Specialist Centre</text>
+</svg>

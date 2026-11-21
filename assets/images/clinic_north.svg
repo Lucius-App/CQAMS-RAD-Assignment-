@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgNorth" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a8a" />
+      <stop offset="100%" stop-color="#1e40af" />
+    </linearGradient>
+    <linearGradient id="bldgNorth" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc" />
+      <stop offset="100%" stop-color="#cbd5e1" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="360" fill="url(#bgNorth)" />
+  <!-- Background modern shapes -->
+  <circle cx="500" cy="180" r="140" fill="#3b82f6" opacity="0.15" />
+  <circle cx="100" cy="80" r="70" fill="#60a5fa" opacity="0.1" />
+  <!-- Modern Clinic Pavilion -->
+  <rect x="140" y="130" width="320" height="190" rx="12" fill="url(#bldgNorth)" />
+  <!-- Rooftop Garden / Accent -->
+  <rect x="160" y="115" width="280" height="15" rx="4" fill="#10b981" />
+  <!-- Glass Facade Windows -->
+  <g fill="#2563eb" opacity="0.8">
+    <rect x="170" y="150" width="70" height="40" rx="4" fill="#38bdf8"/>
+    <rect x="265" y="150" width="70" height="40" rx="4" fill="#38bdf8"/>
+    <rect x="360" y="150" width="70" height="40" rx="4" fill="#38bdf8"/>
+    <rect x="170" y="210" width="70" height="40" rx="4" fill="#38bdf8"/>
+    <rect x="360" y="210" width="70" height="40" rx="4" fill="#38bdf8"/>
+  </g>
+  <!-- Cross Symbol -->
+  <circle cx="300" cy="225" r="18" fill="#ef4444" />
+  <rect x="293" y="222" width="14" height="6" rx="1" fill="#ffffff" />
+  <rect x="297" y="218" width="6" height="14" rx="1" fill="#ffffff" />
+  <!-- Modern Entryway -->
+  <rect x="260" y="260" width="80" height="60" rx="4" fill="#0f172a" />
+  <rect x="265" y="265" width="33" height="55" fill="#93c5fd" opacity="0.85" />
+  <rect x="302" y="265" width="33" height="55" fill="#93c5fd" opacity="0.85" />
+  <!-- Ground -->
+  <rect x="0" y="320" width="600" height="40" fill="#1e293b" />
+  <rect x="0" y="320" width="600" height="4" fill="#3b82f6" />
+  <!-- Badge Label -->
+  <rect x="20" y="20" width="160" height="32" rx="16" fill="#172554" />
+  <text x="100" y="41" fill="#bfdbfe" font-family="system-ui, sans-serif" font-size="13" font-weight="600" text-anchor="middle">North Suburb Clinic</text>
+</svg>

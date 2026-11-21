@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgMain" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f766e" />
+      <stop offset="100%" stop-color="#115e59" />
+    </linearGradient>
+    <linearGradient id="bldgMain" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#e2e8f0" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="360" fill="url(#bgMain)" />
+  <!-- Stars / dots -->
+  <circle cx="80" cy="60" r="3" fill="#99f6e4" opacity="0.6"/>
+  <circle cx="520" cy="90" r="2.5" fill="#99f6e4" opacity="0.6"/>
+  <circle cx="480" cy="40" r="3.5" fill="#99f6e4" opacity="0.4"/>
+  <!-- Hospital Building -->
+  <rect x="180" y="110" width="240" height="210" rx="8" fill="url(#bldgMain)" />
+  <!-- Center Tower -->
+  <rect x="240" y="70" width="120" height="60" rx="6" fill="#f8fafc" />
+  <!-- Red Cross Badge -->
+  <rect x="288" y="85" width="24" height="8" rx="2" fill="#ef4444" />
+  <rect x="296" y="77" width="8" height="24" rx="2" fill="#ef4444" />
+  <!-- Windows -->
+  <g fill="#0284c7" opacity="0.85">
+    <rect x="205" y="135" width="30" height="22" rx="3"/>
+    <rect x="255" y="135" width="30" height="22" rx="3"/>
+    <rect x="315" y="135" width="30" height="22" rx="3"/>
+    <rect x="365" y="135" width="30" height="22" rx="3"/>
+    <rect x="205" y="175" width="30" height="22" rx="3"/>
+    <rect x="255" y="175" width="30" height="22" rx="3"/>
+    <rect x="315" y="175" width="30" height="22" rx="3"/>
+    <rect x="365" y="175" width="30" height="22" rx="3"/>
+    <rect x="205" y="215" width="30" height="22" rx="3"/>
+    <rect x="365" y="215" width="30" height="22" rx="3"/>
+  </g>
+  <!-- Main Entrance Glass Doors -->
+  <rect x="270" y="240" width="60" height="80" rx="4" fill="#0f172a" />
+  <rect x="275" y="245" width="23" height="75" fill="#38bdf8" opacity="0.75" />
+  <rect x="302" y="245" width="23" height="75" fill="#38bdf8" opacity="0.75" />
+  <!-- Canopy -->
+  <polygon points="250,240 350,240 365,250 235,250" fill="#0d9488" />
+  <!-- Road / Ground -->
+  <rect x="0" y="320" width="600" height="40" fill="#334155" />
+  <rect x="0" y="320" width="600" height="4" fill="#14b8a6" />
+  <!-- Badge Label -->
+  <rect x="20" y="20" width="160" height="32" rx="16" fill="#134e4a" />
+  <text x="100" y="41" fill="#ccfbf1" font-family="system-ui, sans-serif" font-size="13" font-weight="600" text-anchor="middle">Central HQ Branch</text>
+</svg>
